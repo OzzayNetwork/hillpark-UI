@@ -150,14 +150,14 @@ blockquote { border-left: 2px solid #dccc99; font-size: 14px; margin: 0 0 20px; 
 
 .btn-sec-col:hover { background: #060606; color: #dccc99; }
 
-.btn-third-col { background: #060606; color: #dccc99; }
-.btn-third-col:hover {background: #dccc99; color: #060606;}
+.btn-third-col { background: #b72c3e; color: #dccc99; }
+.btn-third-col:hover { background: #950013; color: #060606;}
 
 #top-bar .btn-third-col:hover { background: #dccc99; color: #fff; }
 
-.btn-yet-col { background: #fff; border: 1px solid #ebedf0; color: #212224; }
+.btn-yet-col { background: #fff !important; border: 1px solid #ebedf0; color: #212224; }
 
-.btn-yet-col:hover { background: #ebedf0; }
+.btn-yet-col:hover { background: #ebedf0 !important; }
 
 input[type="password"], input[type="search"], input[type="text"] { padding: 0 35px 0 0; border: 1px solid #d7d9db; line-height: 37px; height: 37px; vertical-align: middle; text-indent: 15px; font-size: 13px; width: 100%; }
 
@@ -368,11 +368,11 @@ input.required-alert, input.required-alert:focus, .required-alert textarea { bor
 |  Checkout
 \*===========================================================================*/
 .checkout-menu { padding-right: 30px; overflow: hidden; margin-top: 60px; margin-bottom: 60px; }
-.checkout-menu .btn { position: relative; height: 60px; line-height: 60px; vertical-align: middle; padding: 0; float: right; }
+.checkout-menu .btn { position: relative; height: 60px; line-height: 60px; vertical-align: middle; padding: 0; float: right; font-weight: 300; }
 .checkout-menu .btn:not(.btn-third-col) { color: #828A98; }
 .checkout-menu .btn:after, .checkout-menu .btn:before { content: ""; display: block; position: absolute; height: 0; width: 0; right: -15px; top: 0; border-top: 30px solid transparent; border-bottom: 30px solid transparent; border-right: none; border-left-width: 15px; border-left-style: solid; -moz-transition: all 0.2s ease 0s; -o-transition: all 0.2s ease 0s; -webkit-transition: all 0.2s ease; -webkit-transition-delay: 0s; transition: all 0.2s ease 0s; }
-.checkout-menu .btn.btn-third-col:after, .checkout-menu .btn.btn-third-col:before { border-left-color: #060606; }
-.checkout-menu .btn.btn-third-col:hover:after, .checkout-menu .btn.btn-third-col:hover:before { border-left-color: #dccc99; }
+.checkout-menu .btn.btn-third-col:after, .checkout-menu .btn.btn-third-col:before { border-left-color: #b72c3e; }
+.checkout-menu .btn.btn-third-col:hover:after, .checkout-menu .btn.btn-third-col:hover:before { border-left-color:#950013; }
 .checkout-menu .btn:after { border-left-color: white; border-left-width: 15px; right: -14px; }
 .checkout-menu .btn:before { border-left-color: #ebedf0; right: -15px; }
 .checkout-menu .btn:hover:before, .checkout-menu .btn:hover:after { border-left-color: #ebedf0; }
