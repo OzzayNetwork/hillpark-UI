@@ -1174,14 +1174,19 @@ label a {
   line-height: 25px;
   font-weight: 400;
   font-style: normal;
+	
+/*	kelvin*/
+	border: 1px solid #d7d9db;
+	background: white;
 }
 
 .form-control:focus {
   background: #efefef;
+  background: white;
   outline: none;
   -webkit-box-shadow: none;
   box-shadow: none;
-  border-color: #e3e3e3;
+  border:1px solid #b72c3e73;
 }
 
 /* BOOTSTRAP SELECT */
@@ -7440,7 +7445,7 @@ background: #333;
 }
 .top-facilities i:hover{
 	border: 1px solid #b72c3e;
-    background: #e39aa366;
+    background: #e39aa3;
     color: #b72c3e;
 }
 

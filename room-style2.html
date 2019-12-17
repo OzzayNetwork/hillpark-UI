@@ -686,9 +686,32 @@
                     <h3 class="form-title text-uppercase">book this room</h3>
                     <div class="inner">
                       <form id="booking-form">
-                        <!-- EMAIL -->
+						   <!--number of rooms -->
                         <div class="form-group">
-                          <input class="form-control" name="booking-email" type="email" placeholder="Your Email Address">
+                          <div class="panel-dropdown">
+                            <div class="form-control guestspicker">Number of Rooms
+                              <span class="gueststotal"></span></div>
+                            <div class="panel-dropdown-content">
+                              <div class="guests-buttons">
+                                <label>Adults
+                                  <a href="#" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="How many rooms like this would you want to book" data-original-title="Adults">
+                                    <i class="fa fa-info-circle"></i>
+                                  </a>
+                                </label>
+                                <div class="">
+                                  <div class="minus"></div>
+                                  <input type="text" name="booking-adults" class="booking-guests" value="0" >
+                                  <div class="plus"></div>
+                                </div>
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <!-- EMAIL -->
+						  
+                        <div class="form-group d-none">
+                          <input class="form-control" name="Number of rooms" type="text" placeholder="Number of Rooms">
                         </div>
                         <!-- ROOM TYPE -->
                         <div class="form-group">
@@ -718,7 +741,7 @@
                                 </label>
                                 <div class="guests-button">
                                   <div class="minus"></div>
-                                  <input type="text" name="booking-adults" class="booking-guests" value="0">
+                                  <input type="text" name="booking-adults" class="booking-guests" value="0" >
                                   <div class="plus"></div>
                                 </div>
                               </div>
