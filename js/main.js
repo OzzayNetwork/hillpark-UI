@@ -2227,4 +2227,36 @@ Version:       1.1.0
     }
 
   });
+	
+	
+    // =============================================
+    // payment options
+    // =============================================
+	$('.option-1').on('click', function(){
+		$(this).addClass('active').siblings().removeClass('active');
+	})
+	
+	//=============================================
+	//generrate card years
+	//=============================================
+	var min = new Date().getFullYear(),
+    max = min + 9,
+    select = document.getElementById('card-years');
+
+	for (var i = min; i<=max; i++){
+		var opt = document.createElement('option');
+		opt.value = i;
+		opt.innerHTML = i;
+		select.appendChild(opt);
+	}
+	
+	//=============================================
+	//according clicking
+	//=============================================
+	$('.accordion-header').on('click', function(){
+//		$('.accordion-header[aria-expanded]').attr(false);
+		$(this).parent().siblings().children('.collapse').removeClass('show');
+		$(this).parent().siblings().children('.accordion-header').attr("aria-expanded","true");
+	})
+	
 })(jQuery);

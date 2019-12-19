@@ -461,9 +461,9 @@
       </div>
       <!-- ========== MAIN ========== -->
       <main class="rooms-list-view">
-        <div class="container">
+        <div class="container ">
 <!--         checkout starts here-->
-			 <div class="row">
+			 <div class="row d-none">
             <div class="container checkout-menu pt-0 mt-0">
                <a href="#" class="btn btn-yet-col col-sm-3 col-xs-12">ORDER COMPLETE</a>
                <a href="#" class="btn btn-yet-col col-sm-3 col-xs-12">PAYMENT METHOD</a>
@@ -557,6 +557,7 @@
                            <div class="row">
                               <div class="col-md-12 col-xs-12">
                                  <br>
+								 <p>Input the personal details prompted bellow. We ware looking forward to ensiuring you have a happy stay during your visit</p>
 								  <div class="form-group  p-0 col-sm-12">
                                     <select class="form-control s-styled hasCustomSelect col-md-4" name="billing-country">
                                           <option selected hidden>Title</option>
@@ -653,171 +654,81 @@
 								   <div class="w-100 payment-options py-3">
 <!--									   credit card payment option-->
 								   		<div class="option-1  active">
-									   		<span class="pay-container">
+									   		<span class="pay-container" title="Pay via your credit card">
 												<i aria-hidden="true"  class="pe-7s-credit"></i>
 												<p>Credit card</p>
 											</span>
 									   	</div>
 									   
 									   <div class="option-1">
-									   		<span class="pay-container">
-												<i aria-hidden="true" class="icon_creditcard"></i>
+									   		<span class="pay-container" title="Pay via Mpesa">
+												<i aria-hidden="true" class="pe-7s-phone"></i>
 												<p>Mpesa</p>
 											</span>
 									   	</div>
 									   
 									   <div class="option-1">
-									   		<span class="pay-container">
+									   		<span class="pay-container" title="Pay via your PayPal">
 												<i class="icon-paypal"></i>
 												<p>PayPal</p>
 											</span>
 									   	</div>
 								   </div>
 							   </div>
-                              <div class="col-md-6 col-sm-12">
-
-								  
-                                 <div class="form-group">
-                                    <input type="text" placeholder="First Name *" class="placeholder-fix form-control" name="f_name">
+							   
+							   <div class="col-sm-12">
+								   <div class="form-group">
+									   <label for="card-name" class="text-capitalize">Name on card *</label>
+                                    <input type="text" placeholder="eg John Doe" class="placeholder-fix form-control" name="card-name">
                                  </div>
-                                 <div class="form-group">
-                                    <input type="text" placeholder="Last Name *" class="placeholder-fix form-control" name="l_name">
+								   
+								   <div class="form-group">
+									   <label for="card-num" class="text-capitalize">Card Number *</label>
+                                    <input type="text" placeholder="0000 0000 0000 0000" class="placeholder-fix form-control" name="card-num">
                                  </div>
-                                 <div class="form-group">
-                                    <input type="email" placeholder="E-mail Address *" class="placeholder-fix form-control" name="email">
-                                 </div>
-                                 <div class="form-group">
-                                    <input type="tel" placeholder="Phone *" class="placeholder-fix form-control" name="phone">
-                                 </div>
-                                 <div class="form-group">
-                                    <input type="text" placeholder="Company " class="placeholder-fix form-control" name="company">
-                                 </div>
-                                 <input type="checkbox" class="stl" value="2" name="checkbox" id="checkbox4">
-                                 <label class="stl checkbox" for="checkbox4"><span></span>My dilivery and billing addresses are the same</label><br>
-                                 <input type="checkbox" checked="checked" class="stl" value="3" name="checkbox" id="checkbox5">
-                                 <label class="stl checkbox" for="checkbox5"><span></span>Ship a different address</label><br> 
-                              </div>
-                              <div class="col-md-6 col-sm-12">
-                                 <h6>YOUR ADDRESS</h6><br>
-                                 <div class="row">
-                                    <div class="required form-group col-sm-12">
-                                       <select class="form-control s-styled hasCustomSelect" name="billing-country">
-                                          <option selected hidden>Country</option>
-                                          <option value="1">01</option>
-                                          <option value="2">02</option>
-                                          <option value="3">03</option>
-                                          <option value="4">04</option>
-                                          <option value="5">05</option>
-                                          <option value="6">06</option>
-                                          <option value="7">07</option>
-                                          <option value="8">08</option>
-                                          <option value="9">09</option>
-                                          <option value="10">10</option>
-                                          <option value="11">11</option>
-                                          <option value="12">12</option>
-                                          <option value="13">13</option>
-                                          <option value="14">14</option>
-                                          <option value="15">15</option>
-                                          <option value="16">16</option>
-                                          <option value="17">17</option>
-                                          <option value="18">18</option>
-                                          <option value="19">19</option>
-                                          <option value="20">20</option>
-                                          <option value="21">21</option>
-                                          <option value="22">22</option>
-                                          <option value="23">23</option>
-                                          <option value="24">24</option>
-                                          <option value="25">25</option>
-                                          <option value="26">26</option>
-                                          <option value="27">27</option>
-                                          <option value="28">28</option>
-                                          <option value="29">29</option>
-                                          <option value="30">30</option>
-                                          <option value="31">31</option>
+								   
+								   <div class="form-row">
+									<div class="col">
+									  <div class="form-group">
+									  	 <label for="cvv-num" class="text-capitalize">CVV number *</label>
+                                   		 <input type="text" placeholder="CVV" class="placeholder-fix form-control" name="cvv-num">
+                               		  </div>
+									</div>
+									<div class="col">
+									  <div class="form-group">
+									  	 <label for="card-month" class="text-capitalize">exp. Month *</label>
+                                   		<select class="form-control s-styled hasCustomSelect" name="card-month">
+                                         <option selected hidden>- Month -</option>
+										<option value="January">January</option>
+										<option value="Febuary">Febuary</option>
+										<option value="March">March</option>
+										<option value="April">April</option>
+										<option value="May">May</option>
+										<option value="June">June</option>
+										<option value="July">July</option>
+										<option value="August">August</option>
+										<option value="September">September</option>
+										<option value="October">October</option>
+										<option value="November">November</option>
+										<option value="December">December</option>
+                                          
                                        </select>
-                                    </div>
-                                 </div>
-                                 <div class="form-group">
-                                    <input type="text" placeholder="Town / City * " class="placeholder-fix form-control" name="city">
-                                 </div>
-                                 <div class="form-group">
-                                    <input type="text" placeholder="State / Province * " class="placeholder-fix form-control" name="state">
-                                 </div>
-                                 <div class="form-group">
-                                    <input type="text" placeholder="Postcode / Zip * " class="placeholder-fix form-control" name="zip_code">
-                                 </div>
-                                 <input type="checkbox" checked="checked" class="stl" value="3" name="checkbox" id="checkbox6">
-                                 <label class="stl checkbox" for="checkbox6"><span></span>I have reed and agree to the <a href="#">Privacy Policy</a></label><br> 
-                                 <button class="btn btn-third-col btn-md" type="submit">CONTINUE</button>
-                              </div>
-                              <div class="col-sm-12">
-                                 <br><h6>SHIPPING ADDRESS</h6><br>
-                                 <div class="row">
-                                    <div class="col-md-6 col-sm-12">
-                                       <div class="form-group">
-                                          <input type="text" placeholder="First Name *" class="placeholder-fix form-control" name="f_name">
-                                       </div>
-                                       <div class="form-group">
-                                          <input type="email" placeholder="E-mail Address *" class="placeholder-fix form-control" name="email">
-                                       </div>
-                                       <div class="row">
-                                          <div class="required form-group col-sm-12">
-                                             <select class="form-control s-styled hasCustomSelect" name="billing-country">
-                                                <option selected hidden>Country</option>
-                                                <option value="1">01</option>
-                                                <option value="2">02</option>
-                                                <option value="3">03</option>
-                                                <option value="4">04</option>
-                                                <option value="5">05</option>
-                                                <option value="6">06</option>
-                                                <option value="7">07</option>
-                                                <option value="8">08</option>
-                                                <option value="9">09</option>
-                                                <option value="10">10</option>
-                                                <option value="11">11</option>
-                                                <option value="12">12</option>
-                                                <option value="13">13</option>
-                                                <option value="14">14</option>
-                                                <option value="15">15</option>
-                                                <option value="16">16</option>
-                                                <option value="17">17</option>
-                                                <option value="18">18</option>
-                                                <option value="19">19</option>
-                                                <option value="20">20</option>
-                                                <option value="21">21</option>
-                                                <option value="22">22</option>
-                                                <option value="23">23</option>
-                                                <option value="24">24</option>
-                                                <option value="25">25</option>
-                                                <option value="26">26</option>
-                                                <option value="27">27</option>
-                                                <option value="28">28</option>
-                                                <option value="29">29</option>
-                                                <option value="30">30</option>
-                                                <option value="31">31</option>
-                                             </select>
-                                          </div>
-                                       </div>
-                                       <div class="form-group">
-                                          <input type="text" placeholder="State / Province * " class="placeholder-fix form-control" name="state">
-                                       </div>
-                                    </div>
-                                    <div class="col-md-6 col-sm-12">
-                                       <div class="form-group">
-                                          <input type="text" placeholder="Last Name *" class="placeholder-fix form-control" name="l_name">
-                                       </div>
-                                       <div class="form-group">
-                                          <input type="text" placeholder="Company " class="placeholder-fix form-control" name="company">
-                                       </div>
-                                       <div class="form-group">
-                                          <input type="text" placeholder="Town / City * " class="placeholder-fix form-control" name="city">
-                                       </div>
-                                       <div class="form-group">
-                                          <input type="text" placeholder="Postcode / Zip * " class="placeholder-fix form-control" name="zip_code">
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
+                               		  </div>
+									</div>
+									 <div class="col">
+									  <div class="form-group">
+									  	 <label for="card-year" class="text-capitalize">exp. Year *</label>
+										  <select class="form-control s-styled hasCustomSelect" id="card-years" name="card-year">
+										  <option selected hidden>- Year -</option>
+										</select>
+                               		  </div>
+									</div>  
+								  </div>
+								   <div class="col-md-12 p-0">
+									  <button class="btn btn-third-col btn-md" type="submit">Pay</button>
+								  </div>
+							   	
+							   </div>
                            </div>
                         </div>
                      </div>
