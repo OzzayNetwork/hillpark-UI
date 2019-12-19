@@ -31,6 +31,8 @@
     <link href="fonts/flaticon.css" rel="stylesheet">
     <link href="css/icon_fonts/css/simple-line-icons.css" rel="stylesheet">
     <link href="css/icon_fonts/css/elegant-icons.css" rel="stylesheet">
+    <link href="css/icon_fonts/css/icon_set_1.css" rel="stylesheet">
+    <link href="css/icon_fonts/css/icon_set_2.css" rel="stylesheet">
     <!-- ========== GOOGLE FONTS ========== -->
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700%7CRoboto:100,300,400,400i,500,700" rel="stylesheet">
   </head>
@@ -544,55 +546,137 @@
                   </div>
                </div>
             </div>
-            <div class="col-md-7 col-sm-12 pull-left">
+            <div class="col-md-7 col-sm-12 col-xs-12 pull-left">
                <div id="accordion-order">
                   <div class="accordion-group panel">
                      <a href="#collapse-1" data-parent="#accordion-order" data-toggle="collapse" class="accordion-header" aria-expanded="true">
-                        CHECKOUT OPTION
+                        BILLING DETAILS
                      </a>
                      <div class="in collapse show" id="collapse-1" style="">
                         <div class="accordion-body">
                            <div class="row">
-                              <div class="col-md-6 col-sm-12">
-                                 <form action="#">
-                                    <h6>NEW CUSTOMER</h6>
-                                    <p>Register with us for future convenience</p>
-                                    <input type="checkbox" class="stl" value="2" name="checkbox" id="checkbox1">
-                                    <label class="stl checkbox" for="checkbox1"><span></span>Register Account</label><br>
-                                    <input type="checkbox" checked="checked" class="stl" value="3" name="checkbox" id="checkbox2">
-                                    <label class="stl checkbox" for="checkbox2"><span></span>Checkout us Guest</label><br>     
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,  eiusmod tempor incididunt ut labore et dolore magna aliqua. veniam, quis nostrud  nostrud exercitation laboris. </p>
-                                    <button type="submit" class="btn btn-third-col btn-md">CONTINUE</button>
-                                 </form>
-                              </div>
-                              <div class="col-md-6 col-sm-12">
-                                 <form action="#">
-                                    <h6>REGISTERED CUSTOMER</h6>
-                                    <p>If you have an account with us, please log in.</p>
-                                    <div class="form-group">
-                                       <input type="email" placeholder="Enter your email *" class="placeholder-fix form-control" name="email">
+                              <div class="col-md-12 col-xs-12">
+                                 <br>
+								  <div class="form-group  p-0 col-sm-12">
+                                    <select class="form-control s-styled hasCustomSelect col-md-4" name="billing-country">
+                                          <option selected hidden>Title</option>
+                                         <option value="1">Mr</option>
+										<option value="2">Mrs</option>
+										<option value="3">Miss</option>
+										<option value="4">Ms</option>
+										<option value="5">Dr</option>
+										<option value="6">Professor</option>
+										<option value="27">Rt Hon</option>
+										<option value="32">Captain</option>
+										<option value="22">Major</option>
+										<option value="33">Master</option>	
+                                          
+                                       </select>
+                                 </div>
+                                 <div class="form-group col-sm-12 col-md-6 p-0">
+                                    <input type="text" placeholder="First Name *" class="placeholder-fix form-control" name="f_name">
+                                 </div>
+                                 <div class="form-group col-sm-12 col-md-6 p-0">
+                                    <input type="text" placeholder="Last Name *" class="placeholder-fix form-control" name="l_name">
+                                 </div>
+                                 <div class="form-group col-sm-12 col-md-6 p-0">
+                                    <input type="email" placeholder="E-mail Address *" class="placeholder-fix form-control" name="email">
+                                 </div>
+                                 <div class="form-group col-sm-12 col-md-6 p-0">
+                                    <input type="tel" placeholder="Phone *" class="placeholder-fix form-control" name="phone">
+                                 </div>
+								  <div class="required form-group col-xs-12 col-sm-12 col-md-6 p-0">
+                                       <select class="form-control s-styled hasCustomSelect" name="billing-country">
+                                          <option selected hidden>Country</option>
+                                          <option value="1">01</option>
+                                          <option value="2">02</option>
+                                          <option value="3">03</option>
+                                          <option value="4">04</option>
+                                          <option value="5">05</option>
+                                          <option value="6">06</option>
+                                          <option value="7">07</option>
+                                          <option value="8">08</option>
+                                          <option value="9">09</option>
+                                          <option value="10">10</option>
+                                          <option value="11">11</option>
+                                          <option value="12">12</option>
+                                          <option value="13">13</option>
+                                          <option value="14">14</option>
+                                          <option value="15">15</option>
+                                          <option value="16">16</option>
+                                          <option value="17">17</option>
+                                          <option value="18">18</option>
+                                          <option value="19">19</option>
+                                          <option value="20">20</option>
+                                          <option value="21">21</option>
+                                          <option value="22">22</option>
+                                          <option value="23">23</option>
+                                          <option value="24">24</option>
+                                          <option value="25">25</option>
+                                          <option value="26">26</option>
+                                          <option value="27">27</option>
+                                          <option value="28">28</option>
+                                          <option value="29">29</option>
+                                          <option value="30">30</option>
+                                          <option value="31">31</option>
+                                       </select>
                                     </div>
-                                    <div class="form-group">
-                                       <input type="password" placeholder="Enter your password *" class="placeholder-fix form-control" name="password">
-                                    </div>
-                                    <input type="checkbox" checked="checked" class="stl" value="3" name="checkbox" id="checkbox3">
-                                    <label class="stl checkbox" for="checkbox3"><span></span>Remember Password</label><br>
-                                    <button class="btn btn-third-col btn-md" type="submit">LOGIN</button>
-                                 </form>
+                                 <div class="form-group col-sm-12 col-md-12 p-0">
+									 <p class="p-0 m-0">Optional</p>
+                                    <input type="text" placeholder="Company " class="placeholder-fix form-control col-sm-12 col-md-6" name="company">
+                                 </div>
+                                 <div class="col-md-12 p-0">
+								  	<input type="checkbox" class="stl" value="2" name="checkbox" id="checkbox4">
+                                 <label class="stl checkbox" for="checkbox4"><span></span>I have reed and agree to the Privacy Policy</label><br>
+
+								  </div> 
+								  <div class="col-md-12 p-0">
+									  <button class="btn btn-third-col btn-md" type="submit">CONTINUE</button>
+								  </div>
                               </div>
+                              
+                              
                            </div>
                         </div>
                      </div>
                   </div>
                   <div class="accordion-group panel">
                      <a href="#collapse-2" data-parent="#accordion-order" data-toggle="collapse" class="accordion-header collapsed">
-                        BILLING INFORMATION
+                       PAYMENT OPTIONS
                      </a>
                      <div class="collapse" id="collapse-2" style="height: 0px;">
                         <div class="accordion-body">
                            <div class="row">
+							   <div class="col-md-12">
+							   		<h6>AVAILABLE PAYMENT OPTIONS</h6>
+							  		 <p>Choose a payment option below and fill out the appropriate information. </p>
+								   <div class="w-100 payment-options py-3">
+<!--									   credit card payment option-->
+								   		<div class="option-1  active">
+									   		<span class="pay-container">
+												<i aria-hidden="true"  class="pe-7s-credit"></i>
+												<p>Credit card</p>
+											</span>
+									   	</div>
+									   
+									   <div class="option-1">
+									   		<span class="pay-container">
+												<i aria-hidden="true" class="icon_creditcard"></i>
+												<p>Mpesa</p>
+											</span>
+									   	</div>
+									   
+									   <div class="option-1">
+									   		<span class="pay-container">
+												<i class="icon-paypal"></i>
+												<p>PayPal</p>
+											</span>
+									   	</div>
+								   </div>
+							   </div>
                               <div class="col-md-6 col-sm-12">
-                                 <h6>PERSONAL DETAIL</h6><br>
+
+								  
                                  <div class="form-group">
                                     <input type="text" placeholder="First Name *" class="placeholder-fix form-control" name="f_name">
                                  </div>

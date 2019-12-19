@@ -735,7 +735,14 @@ h6.accordion-h6 { font: 600 16px HelveticaNeue, Arial, Helvetica, sans-serif; ma
 #accordion-order .accordion-header:hover:after, #accordion-order .accordion-header:not(.collapsed):after { border-color: #b72c3e; color: white; }
 #accordion-order h6 { font: 600 16px HelveticaNeue, Arial, Helvetica, sans-serif; margin-top: 30px; }
 #accordion-order .accordion-body { padding-top: 0; }
-#accordion-order .checkbox { margin-bottom: 15px; margin-top: 0; height: auto; }
+#accordion-order .checkbox {
+margin-bottom: 15px;
+    margin-top: 0;
+    height: auto;
+    text-transform: capitalize;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 13px;}
 #accordion-order .form-group input { height: 43px; }
 #accordion-order .btn.btn-md { width: 110px; padding: 0; vertical-align: middle; min-width: 0; font: 14px/38px "Open Sans", sans-serif; }
 #accordion-order label[for=checkbox3] { margin-bottom: 32px; }
