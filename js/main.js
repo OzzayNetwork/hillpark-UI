@@ -2234,7 +2234,41 @@ Version:       1.1.0
     // =============================================
 	$('.option-1').on('click', function(){
 		$(this).addClass('active').siblings().removeClass('active');
-	})
+	});
+	
+	$('#card-method').on('click', function(){
+		show_card();
+	});
+	$('#mpesa-method').on('click', function(){
+		show_mpesa();
+	});
+	
+	$('#paypal-method').on('click', function(){
+		show_paypal();
+	});
+	
+	function show_mpesa(){
+		$('.pay-mpesa').removeClass('d-none').removeClass('rotateOutUpLeft');
+		$('.pay-mpesa').siblings('.pay-form').addClass('rotateOutUpLeft').addClass('d-none').removeClass('rotateInUpLeft');
+		$('.pay-mpesa').addClass('rotateInUpLeft');
+	}
+	
+	
+	function show_card(){
+		$('.pay-card').removeClass('d-none').removeClass('rotateOutUpLeft');
+		$('.pay-card').siblings('.pay-form').addClass('rotateOutUpLeft').addClass('d-none').removeClass('rotateInUpLeft');
+		$('.pay-card').addClass('rotateInUpLeft');
+	}
+	
+	function show_paypal(){
+		$('.pay-pal').removeClass('d-none').removeClass('rotateOutUpLeft');
+		$('.pay-pal').siblings('.pay-form').addClass('rotateOutUpLeft').addClass('d-none').removeClass('rotateInUpLeft');
+		$('.pay-pal').addClass('rotateInUpLeft');
+	}
+	
+	//	disable modal clossing when backdrop is clicked for payment modals
+//	$('#mpesa-modal').modal({backdrop: 'static', keyboard: false}); 
+	
 	
 	//=============================================
 	//generrate card years

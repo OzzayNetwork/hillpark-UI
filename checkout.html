@@ -459,6 +459,35 @@
           </div>
         </div>
       </div>
+	<!-- ========== MODAL ========== -->
+		<!-- Mpesa Modal -->
+		<div class="modal fade" id="mpesa-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				  <span class="loader-container">
+					 <h3 class="text-white mr-2">Waiting for payment</h3> <div class="lds-ripple"><div></div><div></div></div>
+				  </span>
+				  <div class="w-100">
+				  	<img src="images/payment/mpesa.png" class="animated bounceInUp">
+				  </div>
+				  
+
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					 <i class="icon_close"></i>
+				</button>
+			  </div>
+			  <div class="modal-body">
+				  <h4>Mpesa payment procedure</h4>
+				  <p>Mpesa payment request of amount <strong>Kes 25,568</strong> sent to <strong>07xxxxxxxx</strong>. Input your Mpesa Prompted password inorder to confirm the transaction</p>
+				
+			  </div>
+			  <div class="modal-footer d-none">
+						<button class="btn btn-third-col btn-md" type="submit">Close</button>
+				</div>
+			</div>
+		  </div>
+		</div>
       <!-- ========== MAIN ========== -->
       <main class="rooms-list-view">
         <div class="container ">
@@ -571,20 +600,21 @@
 										<option value="32">Captain</option>
 										<option value="22">Major</option>
 										<option value="33">Master</option>	
+											
                                           
                                        </select>
                                  </div>
                                  <div class="form-group col-sm-12 col-md-6 p-0">
-                                    <input type="text" placeholder="First Name *" class="placeholder-fix form-control" name="f_name">
+                                    <input type="text" placeholder="First Name *" class="placeholder-fix form-control" name="f_name" required>
                                  </div>
                                  <div class="form-group col-sm-12 col-md-6 p-0">
-                                    <input type="text" placeholder="Last Name *" class="placeholder-fix form-control" name="l_name">
+                                    <input type="text" placeholder="Last Name *" class="placeholder-fix form-control"  name="l_name" required>
                                  </div>
                                  <div class="form-group col-sm-12 col-md-6 p-0">
-                                    <input type="email" placeholder="E-mail Address *" class="placeholder-fix form-control" name="email">
+                                    <input type="email" placeholder="E-mail Address *" class="placeholder-fix form-control" name="email" required>
                                  </div>
                                  <div class="form-group col-sm-12 col-md-6 p-0">
-                                    <input type="tel" placeholder="Phone *" class="placeholder-fix form-control" name="phone">
+                                    <input type="tel" placeholder="Phone *" class="placeholder-fix form-control" name="phone" required>
                                  </div>
 								  <div class="required form-group col-xs-12 col-sm-12 col-md-6 p-0">
                                        <select class="form-control s-styled hasCustomSelect" name="billing-country">
@@ -877,25 +907,32 @@
                         <div class="accordion-body">
                            <div class="row">
 							   <div class="col-md-12">
+								   <div class="note p-3">
+								   		Total Price is	<strong>KES 8,722.08</strong> *
+										(for 8 guests, 5 Nights and 8 Rooms/Apartments)
+										The exact amount in your currency depends on when you pay. Today’s exchange rate: <strong>KES 8,722.08 = US$86.40.</strong>
+									   <br>
+										Your provider might charge a foreign transaction fee and any other transaction fee where applicable.
+								   </div>
 							   		<h6>AVAILABLE PAYMENT OPTIONS</h6>
 							  		 <p>Choose a payment option below and fill out the appropriate information. </p>
 								   <div class="w-100 payment-options py-3">
 <!--									   credit card payment option-->
-								   		<div class="option-1  active">
+								   		<div class="option-1  active" id="card-method">
 									   		<span class="pay-container" title="Pay via your credit card">
 												<i aria-hidden="true"  class="pe-7s-credit"></i>
 												<p>Credit card</p>
 											</span>
 									   	</div>
 									   
-									   <div class="option-1">
+									   <div class="option-1" id="mpesa-method">
 									   		<span class="pay-container" title="Pay via Mpesa">
 												<i aria-hidden="true" class="pe-7s-phone"></i>
 												<p>Mpesa</p>
 											</span>
 									   	</div>
 									   
-									   <div class="option-1 d-none">
+									   <div class="option-1" id="paypal-method">
 									   		<span class="pay-container" title="Pay via your PayPal">
 												<i class="icon-paypal"></i>
 												<p>PayPal</p>
@@ -904,7 +941,7 @@
 								   </div>
 							   </div>
 							   
-							   <div class="col-sm-12">
+							   <div class="col-sm-12 pay-card animated pay-form">
 								   <div class="form-group">
 									   <label for="card-name" class="text-capitalize">Name on card *</label>
                                     <input type="text" placeholder="eg John Doe" class="placeholder-fix form-control" name="card-name">
@@ -957,68 +994,28 @@
 								  </div>
 							   	
 							   </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="accordion-group panel">
-                     <a href="#collapse-3" data-parent="#accordion-order" data-toggle="collapse" class="accordion-header collapsed">
-                        SHIPPING METHOD
-                     </a>
-                     <div class="collapse" id="collapse-3" style="height: 0px;">
-                        <div class="accordion-body">
-                           <div class="row">
-                              <div class="col-sm-12">
-                                 <div class="form-group radio">
-                                    <input type="radio" class="stl" name="shipping_method" id="airplane" value="Airplane">
-                                    <label for="airplane" class="stl"><span><span></span></span>Airplane</label>
-                                    <p class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque diam sem, hendrerit ut faubus sit amet, bibendum vel lacus. Nunc molestie magna sed sapien ornare tempus. vipsum nectac ligula placerat sollicitudin. Curabitur sit amet magna quam. Praesent in libero vel turpis pellentesque egestas sit amet vel nunc lobortis dui neque, quis accumsan dolor. Aenean aliquet dignissim semper maecenas ullamcorper.</p>
+							   <div class="col-sm-12 pay-mpesa animated d-none pay-form">
+								<div class="form-group">
+									   <label for="mpesa-num" class="text-capitalize" >Mpesa Phone Number</label>
+                                    <input type="text" placeholder="eg 07..." class="placeholder-fix form-control" id="mpesa-num" name="mpesa-phone">
                                  </div>
-                                 <div class="form-group radio">
-                                    <input type="radio" class="stl" name="shipping_method" id="transport" value="Transport">
-                                    <label for="transport" class="stl"><span><span></span></span>Transport</label>
-                                    <p class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque diam sem, hendrerit ut faubus sit amet, bibendum vel lacus. Nunc molestie magna sed sapien ornare tempus. vipsum nectac ligula placerat sollicitudin. Curabitur sit amet magna quam. Praesent in libero vel turpis pellentesque egestas sit amet vel nunc lobortis dui neque, quis accumsan dolor. Aenean aliquet dignissim semper maecenas ullamcorper.</p>
+								  
+								   <div class="col-md-12 p-0">
+									  <button class="btn btn-third-col btn-md" type="submit" data-toggle="modal" data-target="#mpesa-modal" data-backdrop="static" data-keyboard="false">continue</button>
+								  </div>
+							   	
+							   </div>
+							   <div class="col-sm-12 pay-pal animated d-none pay-form">
+								<div class="form-group">
+									   <label for="paypal-email" class="text-capitalize" >Paypal email address</label>
+                                    <input type="text" placeholder="eg email@email.com" class="placeholder-fix form-control" id="paypal-email" name="paypal-email">
                                  </div>
-                                 <div class="form-group radio">
-                                    <input type="radio" class="stl" name="shipping_method" id="train" value="Train">
-                                    <label for="train" class="stl"><span><span></span></span>Train</label>
-                                    <p class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque diam sem, hendrerit ut faubus sit amet, bibendum vel lacus. Nunc molestie magna sed sapien ornare tempus. vipsum nectac ligula placerat sollicitudin. Curabitur sit amet magna quam. Praesent in libero vel turpis pellentesque egestas sit amet vel nunc lobortis dui neque, quis accumsan dolor. Aenean aliquet dignissim semper maecenas ullamcorper.</p>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="accordion-group panel">
-                     <a href="#collapse-4" data-parent="#accordion-order" data-toggle="collapse" class="accordion-header collapsed">
-                        PAYMENT METHOD
-                     </a>
-                     <div class="collapse" id="collapse-4" style="height: 0px;">
-                        <div class="accordion-body">
-                           <div class="row">
-                              <div class="col-sm-12">
-                                 <div class="form-group radio">
-                                    <input type="radio" class="stl" name="payment_method" id="transfer" value="transfer">
-                                    <label for="transfer" class="stl"><span><span></span></span>Direct Bank Transfer</label>
-                                    <p class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque diam sem, hendrerit ut faubus sit amet, bibendum vel lacus. Nunc molestie magna sed sapien ornare tempus. vipsum nectac ligula placerat sollicitudin. Curabitur sit amet magna quam. Praesent in libero vel turpis pellentesque egestas sit amet vel nunc lobortis dui neque, quis accumsan dolor. Aenean aliquet dignissim semper maecenas ullamcorper.</p>
-                                 </div>
-                                 <div class="form-group radio">
-                                    <input type="radio" class="stl" name="payment_method" id="cheque" value="Cheque">
-                                    <label for="cheque" class="stl"><span><span></span></span>Cheque payment</label>
-                                    <p class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque diam sem, hendrerit ut faubus sit amet, bibendum vel lacus. Nunc molestie magna sed sapien ornare tempus. vipsum nectac ligula placerat sollicitudin. Curabitur sit amet magna quam. Praesent in libero vel turpis pellentesque egestas sit amet vel nunc lobortis dui neque, quis accumsan dolor. Aenean aliquet dignissim semper maecenas ullamcorper.</p>
-                                 </div>
-                                 <div class="form-group radio">
-                                    <input type="radio" class="stl" name="payment_method" id="PayPal" value="PayPal">
-                                    <label for="PayPal" class="stl"><span><span></span></span>PayPal <img src="images/paypal_icon.jpg" alt="paypal"></label>
-                                    <p class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque diam sem, hendrerit ut faubus sit amet, bibendum vel lacus. Nunc molestie magna sed sapien ornare tempus. vipsum nectac ligula placerat sollicitudin. Curabitur sit amet magna quam. Praesent in libero vel turpis pellentesque egestas sit amet vel nunc lobortis dui neque, quis accumsan dolor. Aenean aliquet dignissim semper maecenas ullamcorper.</p>
-                                 </div>
-                              </div>
-                           </div>
-                           <br>
-                           <div class="row big-button">
-                              <div class="col-sm-12 clearfix">
-                                 <button class="btn btn-lg btn-third-col" type="submit">PLACE ORDER</button>
-                              </div>
+								  
+								   <div class="col-md-12 p-0">
+									  <button class="btn btn-third-col btn-md" type="submit">continue</button>
+								  </div>
+							   	
+							   </div>
                            </div>
                         </div>
                      </div>
@@ -1026,10 +1023,12 @@
                </div>
                <div class="row">
                   <div class="col-sm-12">
-                     <h6 class="accordion-h6">ORDER NOTES</h6>
+                     <h6 class="accordion-h6">Special Requests</h6>
+					  <p>kindly write the special request in <strong>English</strong></p>
                      <div class="required form-group">
                         <textarea rows="3" class="form-control placeholder-fix" placeholder="Notes about your order"></textarea>
                      </div>
+					  <div class="note p-3"><strong>Note:</strong> Don't disclose any additional personal or payment information in your request</div>
                   </div>
                </div>
             </div>
