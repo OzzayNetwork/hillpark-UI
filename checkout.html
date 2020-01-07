@@ -13,6 +13,7 @@
     <link rel="apple-touch-icon-precomposed" href="images/favicon-apple.png"/>
     <link rel="icon" href="images/favicon.png">
     <!-- ========== STYLESHEETS ========== -->
+	   <link href="css/loaders/css/emoji.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-select.min.css">
     <link rel="stylesheet" href="css/jquery.mmenu.css">
@@ -33,6 +34,7 @@
     <link href="css/icon_fonts/css/elegant-icons.css" rel="stylesheet">
     <link href="css/icon_fonts/css/icon_set_1.css" rel="stylesheet">
     <link href="css/icon_fonts/css/icon_set_2.css" rel="stylesheet">
+   
     <!-- ========== GOOGLE FONTS ========== -->
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700%7CRoboto:100,300,400,400i,500,700" rel="stylesheet">
   </head>
@@ -465,15 +467,30 @@
 		  <div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
 			  <div class="modal-header">
-				  <span class="loader-container">
+				  <span class="loader-container animated">
 					 <h3 class="text-white mr-2">Waiting for payment</h3> <div class="lds-ripple"><div></div><div></div></div>
 				  </span>
 				  <div class="w-100">
-				  	<img src="images/payment/mpesa.png" class="animated bounceInUp">
+				  	<img src="images/payment/mpesa.png" class="animated bounceInUp intro-img">
+					  <div class="successfull animated d-none feedback">
+						<center class="py-3 mb-5">
+							<img src="images/payment/success-img.png" class="celeb-img animated fadeInDownBig">
+							<div class="emoji emoji--yay animated zoomInUp">
+							  <div class="emoji__face">
+								<div class="emoji__eyebrows"></div>
+								<div class="emoji__mouth"></div>
+							  </div>
+							</div>
+						 	 <h2 class="animated text-white d-none">Awesome !</h2>
+							<p class="animated text-white mb-5 d-none" >Your booking has been confirmed.<br> Check your Email for details. looking forward to seeing you.</p> 
+							<button type="button" class="btn btn-default btn-tranparent animated d-none" data-dismiss="modal">Okay</button>
+					  	</center>
+					 </div>
+					  
 				  </div>
 				  
 
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<button type="button" class="close close-icon" data-dismiss="modal" aria-label="Close">
 					 <i class="icon_close"></i>
 				</button>
 			  </div>
@@ -483,7 +500,8 @@
 				
 			  </div>
 			  <div class="modal-footer d-none">
-						<button class="btn btn-third-col btn-md" type="submit">Close</button>
+						<button class="btn btn-third-col btn-md">Close</button>
+						<button class="btn feed">Close</button>
 				</div>
 			</div>
 		  </div>

@@ -2266,6 +2266,51 @@ Version:       1.1.0
 		$('.pay-pal').addClass('rotateInUpLeft');
 	}
 	
+	$('.btn-md').on('click', function(){
+		setTimeout(function(){
+			mpesa_feed();			
+		},6000);
+		
+	});
+	
+	function mpesa_feed(){
+		$('#mpesa-modal .modal-body').slideUp();
+		$('#mpesa-modal .modal-footer').addClass('d-none');
+		$('#mpesa-modal .modal-header .w-100 .intro-img').removeClass('bounceInUp')
+		setTimeout(function(){
+			$('#mpesa-modal .modal-header .w-100 .intro-img').addClass('jello');
+		},300);
+		setTimeout(function(){
+			$('#mpesa-modal .modal-header .w-100 .intro-img').removeClass('jello').addClass('zoomOutDown');
+			$('#mpesa-modal .loader-container').addClass('flipOutX');
+		},600);
+		
+		setTimeout(function(){
+			$('#mpesa-modal .modal-header .w-100 .intro-img').addClass('d-none');
+		},810);
+		
+		setTimeout(function(){
+			mpesa_success();
+		},800);
+		
+	}
+	
+	function mpesa_success(){
+		$('#mpesa-modal .successfull').removeClass('d-none');
+		setTimeout(function(){
+			$('#mpesa-modal .feedback h2').removeClass('d-none').addClass('bounceInUp');
+		},300);
+		
+		setTimeout(function(){
+			$('#mpesa-modal .feedback p').removeClass('d-none').addClass('bounceInUp');
+		},500);
+		
+		setTimeout(function(){
+			$('#mpesa-modal .feedback .btn').removeClass('d-none').addClass('bounceInUp');
+		},700);
+
+	}
+	
 	//	disable modal clossing when backdrop is clicked for payment modals
 //	$('#mpesa-modal').modal({backdrop: 'static', keyboard: false}); 
 	
