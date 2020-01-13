@@ -940,7 +940,7 @@ a.close-btn.ddr {
 }
 .dd-product-desc .title {
     color: #212224 !important;
-    font-weight: 400 !important;
+/*    font-weight: 400 !important;*/
     display: block;
     margin-bottom: 5px;
 	text-transform: none !important;

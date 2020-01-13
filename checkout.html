@@ -213,7 +213,11 @@
                                  </div>
                                  <div class="dd-product-desc pull-left">
                                     <a class="title">Executive</a>
-									 <div class="qnty-controller">
+									<!--									 number of people-->
+									 <p class="d-flex pb-0 mb-0"><small>Adults: <span>4</span></small> <small class="ml-2">Children: <span>4</span></small></p>
+									<!--									 dates-->
+									 <p class="d-flex pb-0 mb-0"><small>From: <span>1st Jan 2019</span></small> <small class="ml-2">To: <span>2nd April 2019</span></small></p>
+									 <div class="qnty-controller d-none">
 									 	<div class="cart_quantity_button clrfix">
                                  		<a title="Subtract" href="#" class="cart_quantity_down btn btn-default btn-minus" rel="nofollow">-</a>
                                 		 <input type="text" name="quantity" value="1" class="cart_quantity_input form-control grey count" autocomplete="off" size="2" disabled="">
@@ -232,7 +236,11 @@
                                  </div>
                                  <div class="dd-product-desc pull-left">
                                     <a class="title">Delux</a>
-									 <div class="qnty-controller">
+									 <!--									 number of people-->
+									 <p class="d-flex pb-0 mb-0"><small>Adults: <span>4</span></small> <small class="ml-2">Children: <span>4</span></small></p>
+									<!--									 dates-->
+									 <p class="d-flex pb-0 mb-0"><small>From: <span>1st Jan 2019</span></small> <small class="ml-2">To: <span>2nd April 2019</span></small></p>
+									 <div class="qnty-controller d-none">
 									 	<div class="cart_quantity_button clrfix">
                                  		<a title="Subtract" href="#" class="cart_quantity_down btn btn-default btn-minus" rel="nofollow">-</a>
                                 		 <input type="text" name="quantity" value="1" class="cart_quantity_input form-control grey count" autocomplete="off" size="2" disabled="">
@@ -792,9 +800,10 @@
 								   
 								   <div class="form-row">
 									<div class="col">
-									  <div class="form-group">
+									  <div class="form-group position-relative">
 									  	 <label for="cvv-num" class="text-capitalize">CVV number *</label>
                                    		 <input type="text" placeholder="CVV" class="placeholder-fix form-control" name="cvv-num">
+										  <div class="cvv-helper" id="cvv-click"><span class="icon_question_alt2"></span></div>
                                		  </div>
 									</div>
 									<div class="col">
@@ -873,6 +882,14 @@
          </div>
         </div>
       </main>
+	<!--		credit card help information-->
+		<div class="cvvTooltip d-none animated fadeInDown">
+			<span class="close-button pointer pe-7s-close"></span>
+			<div class="tooltipDesc">Your card's security code (CVV) is the 3 or 4 digit number located on the back of most cards.</div>
+			<div class="otherCvvHelp"></div>
+			<div class="amexCvvHelp"></div>
+		</div>
+	<!--		credit card help information-->
       <!-- ========== FOOTER ========== -->
       <footer>
         <div class="footer-widgets">

@@ -67,6 +67,24 @@ Version:       1.1.0
     // =============================================
     // MENU
     // =============================================
+	  
+	  
+	  // =============================================
+    // CVV POPING
+    // =============================================
+	  
+	  $('#cvv-click').on('click', function(){
+		  $('.cvvTooltip').removeClass('d-none');		  
+	  });
+	  
+	  $('.close-button').on('click', function(){
+		  $('.cvvTooltip').addClass('d-none');	
+	  })
+	  // =============================================
+    // CVV POPPING
+    // =============================================
+	  
+	  
     function mmenuInit() {
       var screenwidth = $(window).width();
       var header = $('header');
