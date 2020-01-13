@@ -7676,6 +7676,14 @@ background: #333;
 	display: flex !important;
     filter: opacity(0.5);
 }
+.modal{
+	transition: .6s;
+}
+
+.modal-pay .modal-header, .modal-pay .modal-content{
+	border: none;
+}
+
 @keyframes lds-ripple {
   0% {
     top: 16px;
