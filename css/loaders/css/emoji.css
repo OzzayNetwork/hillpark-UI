@@ -265,7 +265,7 @@
 }
 
 .emoji--wow:after {
-  content: "Wow";
+/*  content: "Wow";*/
 }
 .emoji--wow .emoji__face {
   -webkit-animation: wow-face 3s linear infinite;
@@ -320,7 +320,7 @@
 }
 
 .emoji--sad:after {
-  content: "Sad";
+/*  content: "Sad";*/
 }
 .emoji--sad .emoji__face {
   -webkit-animation: sad-face 2s ease-in infinite;
@@ -409,7 +409,7 @@
           animation: angry-color 2s ease-in infinite;
 }
 .emoji--angry:after {
-  content: "Angry";
+/*  content: "Angry";*/
 }
 .emoji--angry .emoji__face {
   -webkit-animation: angry-face 2s ease-in infinite;

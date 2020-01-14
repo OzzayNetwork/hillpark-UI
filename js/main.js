@@ -2290,6 +2290,15 @@ Version:       1.1.0
 		},6000);
 		
 	});
+	function hide_mpesa(){
+		$('#mpesa-modal .modal-body').slideDown();
+//		$('#mpesa-modal .modal-footer').removeClass('d-none');
+		$('#mpesa-modal .modal-header .w-100 .intro-img').removeClass('bounceInUp')	;
+		$('#mpesa-modal .loader-container').removeClass('flipOutX');
+		$('#mpesa-modal .modal-header .w-100 .intro-img').removeClass('d-none');
+		$('#mpesa-modal').modal('hide');
+		$('#mpesa-modal .modal-header').css('background-color','#0eb520');
+	}
 	
 	function mpesa_feed(){
 		$('#mpesa-modal .modal-body').slideUp();
@@ -2308,7 +2317,7 @@ Version:       1.1.0
 		},810);
 		
 		setTimeout(function(){
-			mpesa_success();
+			mpesa_similar();
 		},800);
 		
 	}
@@ -2328,6 +2337,61 @@ Version:       1.1.0
 		},700);
 
 	}
+	
+	function mpesa_timeout(){
+		$('#mpesa-modal .mpesa-timeout').removeClass('d-none');
+		setTimeout(function(){
+			$('#mpesa-modal .feedback h2').removeClass('d-none').addClass('bounceInUp');
+			$('#mpesa-modal .modal-header').css('background-color','#fbcd06');
+		},300);
+		
+		setTimeout(function(){
+			$('#mpesa-modal .feedback p').removeClass('d-none').addClass('bounceInUp');
+		},500);
+		
+		setTimeout(function(){
+			$('#mpesa-modal .feedback .btn').removeClass('d-none').addClass('bounceInUp');
+		},700);
+	}
+	
+	function mpesa_err(){
+		$('#mpesa-modal .mpesa-error').removeClass('d-none');
+		setTimeout(function(){
+			$('#mpesa-modal .feedback h2').removeClass('d-none').addClass('bounceInUp');
+			$('#mpesa-modal .modal-header').css('background-color','#e61429');
+		},300);
+		
+		setTimeout(function(){
+			$('#mpesa-modal .feedback p').removeClass('d-none').addClass('bounceInUp');
+		},500);
+		
+		setTimeout(function(){
+			$('#mpesa-modal .feedback .btn').removeClass('d-none').addClass('bounceInUp');
+		},700);
+	}
+	function mpesa_similar(){
+		$('#mpesa-modal .similar-mpesa').removeClass('d-none');
+		setTimeout(function(){
+			$('#mpesa-modal .feedback h2').removeClass('d-none').addClass('bounceInUp');
+			$('#mpesa-modal .modal-header').css('background-color','#e61429');
+		},300);
+		
+		setTimeout(function(){
+			$('#mpesa-modal .feedback p').removeClass('d-none').addClass('bounceInUp');
+		},500);
+		
+		setTimeout(function(){
+			$('#mpesa-modal .feedback .btn').removeClass('d-none').addClass('bounceInUp');
+		},700);
+	}
+	
+	$('.retry-mpesa').on('click', function(){
+//		 mpesa_feed();
+		hide_mpesa();
+		setTimeout(function(){
+			mpesa_feed();
+		}, 700);
+	});
 	
 	//	disable modal clossing when backdrop is clicked for payment modals
 //	$('#mpesa-modal').modal({backdrop: 'static', keyboard: false}); 
