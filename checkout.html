@@ -410,64 +410,28 @@
 							  </div>
 							</div>
 						 	 <h2 class="animated text-white d-none">Awesome !</h2>
-							<p class="animated text-white mb-5 d-none" >Your booking has been confirmed.<br> Check your Email for details. looking forward to seeing you.</p> 
+							<p class="animated text-white mb-5 d-none" >Your booking has been confirmed.<br> Check your Email for more details. looking forward to seeing you.</p> 
 							<button type="button" class="btn btn-default btn-tranparent animated d-none" data-dismiss="modal">Okay</button>
 					  	</center>
 					 </div>
 <!--					  succsefull transaction-->
 					  
 					  <!--					  timed out -->
-					  <div class="mpesa-timeout animated d-none feedback">
+					  <div class="credit-err animated d-none feedback">
 						<center class="py-3 mb-5">
-							<div class="emoji  emoji--wow">
+							<div class="emoji  emoji--sad">
 							  <div class="emoji__face">
 								<div class="emoji__eyebrows"></div>
 								<div class="emoji__eyes"></div>
 								<div class="emoji__mouth"></div>
 							  </div>
 							</div>
-						 	 <h2 class="animated text-white d-none">Timeout !</h2>
+						 	 <h2 class="animated text-white d-none">Payment Error</h2>
 							<p class="animated text-white mb-5 d-none" >The payment request was timed out<br> you took to long before you could enter your account credentials. Press <strong>retry</strong> to reinitiate payment request</p> 
 							<button type="button" class="btn btn-default btn-tranparent animated d-none retry-mpesa">Retry</button>
 					  	</center>
 					 </div>
-<!--					  timed out -->
-					  
-					   <!--					  mpesa error -->
-					  <div class="mpesa-error animated d-none feedback">
-						<center class="py-3 mb-5">
-							<div class="emoji  emoji--sad">
-								  <div class="emoji__face">
-									<div class="emoji__eyebrows"></div>
-									<div class="emoji__eyes"></div>
-									<div class="emoji__mouth"></div>
-								  </div>
-								</div>
-						 	 <h2 class="animated text-white d-none">Mpesa Error !</h2>
-							<p class="animated text-white mb-5 d-none" >There seems to be an issue with Mpesa<br> Kindly retry later if at all the problem will be fixed</p> 
-							<button type="button" class="btn btn-default btn-tranparent animated d-none">Retry</button>
-					  	</center>
-					 </div>
-<!--					  mpesa error -->
-					  
-					   <!--					  similar transaction -->
-					  <div class="similar-mpesa animated d-none feedback">
-						<center class="py-3 mb-5">
-							<img src="images/payment/success-img.png" class="celeb-img animated fadeInDownBig">
-							<div class="emoji  emoji--angry">
-								  <div class="emoji__face">
-									<div class="emoji__eyebrows"></div>
-									<div class="emoji__eyes"></div>
-									<div class="emoji__mouth"></div>
-								  </div>
-								</div>
-						 	 <h2 class="animated text-white d-none">Similar Transaction !</h2>
-							<p class="animated text-white mb-5 d-none" >It seems like you were using mpesa beore you initiated the payment.<br>Kindly close your <strong>Sim Toolkit</strong> application from your phone to contnue</p> 
-							<button type="button" class="btn btn-default btn-tranparent animated d-none">Retry</button>
-					  	</center>
-					 </div>
-<!--					  similar transaction  -->
-					  
+
 				  </div>
 				  
 
@@ -476,7 +440,7 @@
 				</button>
 			  </div>
 			  <div class="modal-body">
-				  <h4>Mpesa payment procedure</h4>
+				  <h4>Processing card payment</h4>
 				  <p>Mpesa payment request of amount <strong>Kes 25,568</strong> sent to <strong>07xxxxxxxx</strong>. Input your Mpesa Prompted password inorder to confirm the transaction</p>
 				
 			  </div>
@@ -990,7 +954,7 @@
 									</div>  
 								  </div>
 								   <div class="col-md-12 p-0">
-									  <button class="btn btn-third-col btn-md" type="submit">Pay</button>
+									  <button class="btn btn-third-col btn-md" type="submit"  data-toggle="modal" data-target="#credit-modal" data-backdrop="static" data-keyboard="false" id="card-pay-btn">Pay</button>
 								  </div>
 							   	
 							   </div>
@@ -1001,7 +965,7 @@
                                  </div>
 								  
 								   <div class="col-md-12 p-0">
-									  <button class="btn btn-third-col btn-md" type="submit" data-toggle="modal" data-target="#mpesa-modal" data-backdrop="static" data-keyboard="false">continue</button>
+									  <button class="btn btn-third-col btn-md" type="submit" data-toggle="modal" data-target="#mpesa-modal" data-backdrop="static" data-keyboard="false" id="mpesa-pay-btn">continue</button>
 								  </div>
 							   	
 							   </div>

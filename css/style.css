@@ -7529,7 +7529,7 @@ background: #333;
     font-size: 12px;
     margin: 10px 0;
 }
-#mpesa-modal h4, #mpesa-modal h3{
+#mpesa-modal h4, #mpesa-modal h3, #credit-modal h4, #credit-modal h3{
 	display: inline-block;
     font-weight: 400;
     margin-bottom: 20px;
@@ -7540,7 +7540,7 @@ background: #333;
     color: #b72c3e;
 }
 
-#mpesa-modal h4::after, #mpesa-modal h3::after{
+#mpesa-modal h4::after, #mpesa-modal h3::after, #credit-modal h4::after, #credit-modal h3::after{
 	background: #b72c3e none repeat scroll 0 0;
     bottom: 0;
     content: "";
@@ -7549,7 +7549,7 @@ background: #333;
     position: absolute;
     width: 10px;
 }
-#mpesa-modal h4::before, #mpesa-modal h3::before{
+#mpesa-modal h4::before, #mpesa-modal h3::before, #credit-modal h4::before, #credit-modal h3::before{
 	background: #b72c3e none repeat scroll 0 0;
     bottom: 0;
     content: "";
@@ -7558,20 +7558,20 @@ background: #333;
     position: absolute;
     width: 30px;
 }
-#mpesa-modal h3::after{
+#mpesa-modal h3::after, #credit-modal h3::after{
 	background: white !important;
 }
-#mpesa-modal h3::before{
+#mpesa-modal h3::before, #credit-modal h3::before{
 	background: white !important;
 }
 
-#mpesa-modal .modal-header{
+#mpesa-modal .modal-header, #credit-modal .modal-header{
 	background-color: #0eb520;
     flex-flow: column;
 	position: relative;
 }
 
-#mpesa-modal .modal-header .close-icon{
+#mpesa-modal .modal-header .close-icon, #credit-modal .modal-header .close-icon{
 	position: absolute;
     right: 1rem;
     top: 1rem;
@@ -7588,7 +7588,7 @@ background: #333;
 	overflow: hidden;
 }
 
-#mpesa-modal .modal-header img{
+#mpesa-modal .modal-header img, #credit-modal .modal-header img{
 	height: 369px;
 }
 
@@ -7646,7 +7646,7 @@ background: #333;
 	position: relative;
 }
 
-#mpesa-modal .modal-header::before{
+#mpesa-modal .modal-header::before, #credit-modal .modal-header::before{
 	content: '';
     width: 115%;
     height: 80px;
@@ -7657,6 +7657,13 @@ background: #333;
     transform: rotate(-2deg);
     -webkit-transform: rotate(11deg);
     -moz-transform: rotate(-2deg);
+}
+
+#credit-modal .modal-header{
+	background-color: #0079fe;
+}
+#credit-modal .modal-header::before{
+	background-color: #0a6fe0;
 }
 .modal-content{
 	overflow: hidden;

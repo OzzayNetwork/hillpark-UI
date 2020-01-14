@@ -2284,9 +2284,20 @@ Version:       1.1.0
 		$('.pay-pal').addClass('rotateInUpLeft');
 	}
 	
-	$('.btn-md').on('click', function(){
+//	show mpesa pyment dialog on click
+	
+	$('#mpesa-pay-btn').on('click', function(){
 		setTimeout(function(){
 			mpesa_feed();			
+		},6000);
+		
+	});
+	
+	//	show credit pyment dialog on click
+	
+	$('#card-pay-btn').on('click', function(){
+		setTimeout(function(){
+			credit_feed();			
 		},6000);
 		
 	});
@@ -2321,6 +2332,29 @@ Version:       1.1.0
 		},800);
 		
 	}
+	
+	function credit_feed(){
+		$('#credit-modal .modal-body').slideUp();
+		$('#credit-modal .modal-footer').addClass('d-none');
+		$('#credit-modal .modal-header .w-100 .intro-img').removeClass('bounceInUp')
+		setTimeout(function(){
+			$('#credit-modal .modal-header .w-100 .intro-img').addClass('jello');
+		},300);
+		setTimeout(function(){
+			$('#credit-modal .modal-header .w-100 .intro-img').removeClass('jello').addClass('zoomOutDown');
+			$('#credit-modal .loader-container').addClass('flipOutX');
+		},600);
+		
+		setTimeout(function(){
+			$('#credit-modal .modal-header .w-100 .intro-img').addClass('d-none');
+		},810);
+		
+		setTimeout(function(){
+			credit_err();
+		},800);
+		
+	}
+	
 	
 	function mpesa_success(){
 		$('#mpesa-modal .successfull').removeClass('d-none');
@@ -2369,6 +2403,39 @@ Version:       1.1.0
 			$('#mpesa-modal .feedback .btn').removeClass('d-none').addClass('bounceInUp');
 		},700);
 	}
+	
+	function credit_success(){
+		$('#credit-modal .successfull').removeClass('d-none');
+		setTimeout(function(){
+			$('#credit-modal .feedback h2').removeClass('d-none').addClass('bounceInUp');
+		},300);
+		
+		setTimeout(function(){
+			$('#credit-modal .feedback p').removeClass('d-none').addClass('bounceInUp');
+		},500);
+		
+		setTimeout(function(){
+			$('#credit-modal .feedback .btn').removeClass('d-none').addClass('bounceInUp');
+		},700);
+
+	}
+	
+	function credit_err(){
+		$('#credit-modal .credit-err').removeClass('d-none');
+		setTimeout(function(){
+			$('#credit-modal .feedback h2').removeClass('d-none').addClass('bounceInUp');
+			$('#credit-modal .modal-header').css('background-color','#e61429');
+		},300);
+		
+		setTimeout(function(){
+			$('#credit-modal .feedback p').removeClass('d-none').addClass('bounceInUp');
+		},500);
+		
+		setTimeout(function(){
+			$('#credit-modal .feedback .btn').removeClass('d-none').addClass('bounceInUp');
+		},700);
+	}
+	
 	function mpesa_similar(){
 		$('#mpesa-modal .similar-mpesa').removeClass('d-none');
 		setTimeout(function(){
