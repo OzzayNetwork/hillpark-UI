@@ -244,345 +244,297 @@
       <!-- ========== MAIN ========== -->
       <main class="rooms-list-view">
         <div class="container">
-          <!-- ITEM -->
-          <div class="room-list-item">
-            <div class="row">
-              <div class="col-lg-4">
-                <figure class="gradient-overlay-hover link-icon">
-                  <a href="room.html"><img src="images/rooms/standard-double-room/standard-double-room.jpg" class="img-fluid" alt="Image"></a>
-                </figure>
-              </div>
-              <div class="col-lg-6">
-                <div class="room-info">
-                  <h3 class="room-title">
-                    <a href="room.html" class="text-capitalize">Standard double room</a>
-                  </h3>
-                                    <span><strong>50 M<sup>2</sup></strong></span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus animi quod adipisci quia? Laudantium quibusdam, mollitia nisi quasi perspiciatis omnis...</p>
-                  <div class="room-services">
-                    <i class="fa fa-coffee" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i>
-                    <i class="fa fa-wifi" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Free WiFi" data-original-title="WiFi"></i>
-                    <i class="fa fa-television" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Plasma TV with Satellite Channels" data-original-title="TV"></i>
-                    <span>Beds: 1 King</span>
-                    <span>Max Guests: 2</span>
+		<!--         cart starts here-->
+         <div class="row">
+            <div class="gap-60"></div>
+            <div class="col-lg-8 col-md-12">
+               <div class="table_block table-responsive mb-40" id="order-detail-content">
+                  <table class="table table-bordered" id="cart_summary">
+                     <thead>
+                        <tr>
+                           <th colspan="2" class="cart_product first_item">Room/ Apartment</th>
+                           <th class="cart_unit item">Price</th>
+                           <th class="cart_quantity item">Adults</th>
+                           <th class="cart_delete last_item">SUBTOTAL</th>
+                        </tr>
+                     </thead>
+                     <tfoot class="dd-list-empty"><tr><td colspan="5">There is no product in it!</td></tr></tfoot>
+                     <tbody class="dropdown-product-list">
+                        <tr class="cart_item first_item address_0 odd dd-product-group">
+                           <td class="cart_product">
+                              <a href="product-page.html">
+                                 <img alt="Faded Short Sleeve T-shirts" src="images/rooms/standard-double-room/standard-double-room.jpg">
+                              </a>
+                           </td>
+                           <td class="cart_description">
+                              <p class="product-name">
+                                 <a href="product-page.html">Standard double room</a>
+                              </p>
+                              <small>Check In:<span>9 Jul 2020</span></small>
+                              <small>Checkout Out:<span>15 Jul 2020</span></small>
+
+                           </td>
+                           <td data-title="PRICE" class="cart_unit">
+                              <span class="price">$800.00</span>
+                           </td>
+
+                           <td class="cart_quantity text-center">
+                              <div class="cart_quantity_button clrfix">
+                                 <a title="Subtract" href="#" class="cart_quantity_down btn btn-default btn-minus" rel="nofollow">-</a>
+                                 <input type="text" name="quantity" value="1" class="cart_quantity_input form-control grey count" autocomplete="off" size="2" disabled>
+                                 <a title="Add" href="#" class="cart_quantity_up btn btn-default btn-plus" rel="nofollow">+</a>
+                              </div>
+                           </td>
+                           <td class="subtotal text-center" data-title="SUBTOTAL">
+                              <a class="close-btn ddr" href="#"><i class="icon_close"></i></a>
+                              <p>$ 800.00</p>
+                           </td>
+                        </tr>
+
+                        <tr class="cart_item first_item address_0 odd dd-product-group">
+                           <td class="cart_product">
+                              <a href="product-page.html">
+                                 <img alt="Faded Short Sleeve T-shirts" src="images/rooms/three-bedroom-apartment/three-bedroom.jpg">
+                              </a>
+                           </td>
+                           <td class="cart_description">
+                              <p class="product-name">
+                                 <a href="product-page.html">Three bedroom apartment</a>
+                              </p>
+                              <small>Check In:<span>9 Jul 2020</span></small>
+                              <small>Checkout Out:<span>15 Jul 2020</span></small>
+                           </td>
+                           <td data-title="PRICE" class="cart_unit">
+                              <span class="price">$800.00</span>
+                           </td>
+
+                           <td class="cart_quantity text-center">
+                              <div class="cart_quantity_button clrfix">
+                                 <a title="Subtract" href="#" class="cart_quantity_down btn btn-default btn-minus" rel="nofollow">-</a>
+                                 <input type="text" name="quantity" value="1" class="cart_quantity_input form-control grey count" autocomplete="off" size="2" disabled>
+                                 <a title="Add" href="#" class="cart_quantity_up btn btn-default btn-plus" rel="nofollow">+</a>
+                              </div>
+                           </td>
+                           <td class="subtotal text-center" data-title="SUBTOTAL">
+                              <a class="close-btn ddr" href="#"><i class="icon_close"></i></a>
+                              <p>$ 800.00</p>
+                           </td>
+                        </tr>
+                        <tr class="cart_item first_item address_0 odd dd-product-group">
+                           <td class="cart_product">
+                              <a href="product-page.html">
+                                 <img alt="Faded Short Sleeve T-shirts" src="images/rooms/one-bedroom/one-bedroom.jpg">
+                              </a>
+                           </td>
+                           <td class="cart_description">
+                              <p class="product-name">
+                                 <a href="product-page.html">One bedroom apartment</a>
+                              </p>
+                              <small>Check In:<span>9 Jul 2020</span></small>
+                              <small>Checkout Out:<span>15 Jul 2020</span></small>
+                           </td>
+                           <td data-title="PRICE" class="cart_unit">
+                              <span class="price">$800.00</span>
+                           </td>
+
+                           <td class="cart_quantity text-center">
+                              <div class="cart_quantity_button clrfix">
+                                 <a title="Subtract" href="#" class="cart_quantity_down btn btn-default btn-minus" rel="nofollow">-</a>
+                                 <input type="text" name="quantity" value="1" class="cart_quantity_input form-control grey count" autocomplete="off" size="2" disabled>
+                                 <a title="Add" href="#" class="cart_quantity_up btn btn-default btn-plus" rel="nofollow">+</a>
+                              </div>
+                           </td>
+                           <td class="subtotal text-center" data-title="SUBTOTAL">
+                              <a class="close-btn ddr" href="#"><i class="icon_close"></i></a>
+                              <p>$ 800.00</p>
+                           </td>
+                        </tr>
+                        <tr class="cart_item first_item address_0 odd dd-product-group">
+                           <td class="cart_product">
+                              <a href="product-page.html">
+                                 <img alt="Faded Short Sleeve T-shirts" src="images/rooms/deluxe/deluxe.jpg">
+                              </a>
+                           </td>
+                           <td class="cart_description">
+                              <p class="product-name">
+                                 <a href="product-page.html">deluxe suit</a>
+                              </p>
+                              <small>Check In:<span>9 Jul 2020</span></small>
+                              <small>Checkout Out:<span>15 Jul 2020</span></small>
+                           </td>
+                           <td data-title="PRICE" class="cart_unit">
+                              <span class="price">$800.00</span>
+                           </td>
+
+                           <td class="cart_quantity text-center">
+                              <div class="cart_quantity_button clrfix">
+                                 <a title="Subtract" href="#" class="cart_quantity_down btn btn-default btn-minus" rel="nofollow">-</a>
+                                 <input type="text" name="quantity" value="1" class="cart_quantity_input form-control grey count" autocomplete="off" size="2" disabled>
+                                 <a title="Add" href="#" class="cart_quantity_up btn btn-default btn-plus" rel="nofollow">+</a>
+                              </div>
+                           </td>
+                           <td class="subtotal text-center" data-title="SUBTOTAL">
+                              <a class="close-btn ddr" href="#"><i class="icon_close"></i></a>
+                              <p>$ 800.00</p>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-12 pull-right">
+               <div class="row">
+                  <div class="container col-xs-12 cart-detail">
+                     <h6 class="gold-header">CART DETAIL</h6>
+                     <p class="info"><span class="pull-left col-xs-6">Cart Subtotal:</span><span class="pull-right col-xs-6 text-right">$2100.00</span></p>
+                     <p class="info"><span class="pull-left col-xs-6">Shipping:</span><span class="pull-right col-xs-6 text-right gray">$50</span></p>
+                     <p class="info total"><span class="pull-left col-xs-6">ORDER TOTAL:</span><span class="col-xs-6 pull-right text-right">$2100.00</span></p>
                   </div>
-                </div>
-              </div>
-              <div class="col-lg-2">
-                <div class="room-price">
-					<span class="price">Kes  7,875</span>
-					<span class="per-night"><small><strong>Per Night</strong></small></span>
-                  <a href="room.html" class="btn btn-sm">VIEW DETAILS</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ITEM -->
-          <div class="room-list-item">
-            <div class="favorite-item d-none">
-              <i class="fa fa-star-o"></i>
-            </div>
-            <div class="row">
-              <div class="col-lg-4">
-                <figure class="gradient-overlay-hover link-icon">
-                  <a href="room.html"><img src="images/rooms/three-bedroom-apartment/three-bedroom.jpg" class="img-fluid" alt="Image"></a>
-                </figure>
-              </div>
-              <div class="col-lg-6">
-                <div class="room-info">
-                  <h3 class="room-title">
-                    <a href="room.html" class="text-capitalize">three bedroom apartment</a>
-                  </h3>
-                                    <span><strong>120 M<sup>2</sup></strong></span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus animi quod adipisci quia? Laudantium quibusdam, mollitia nisi quasi perspiciatis omnis...</p>
-                  <div class="room-services">
-                    <i class="fa fa-coffee" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i>
-                    <i class="fa fa-wifi" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Free WiFi" data-original-title="WiFi"></i>
-                    <i class="fa fa-television" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Plasma TV with Satellite Channels" data-original-title="TV"></i>
-                    <span>Beds: 2 King</span>
-                    <span>Max Guests: 4</span>
+               </div>
+               <div class="row d-none">
+                  <div class="col-xs-12"><h6 class="gold-header">CALCULATE SHIPPING</h6></div>
+                  <div class="container col-xs-12">
+                     <div class="calc-shipping clearfix">
+                        <div class="required form-group col-xs-12">
+                           <select class="form-control s-styled hasCustomSelect" name="shipping_country">
+                              <option selected hidden>Country</option>
+                              <option value="1">01</option>
+                              <option value="2">02</option>
+                              <option value="3">03</option>
+                              <option value="4">04</option>
+                              <option value="5">05</option>
+                              <option value="6">06</option>
+                              <option value="7">07</option>
+                              <option value="8">08</option>
+                              <option value="9">09</option>
+                              <option value="10">10</option>
+                              <option value="11">11</option>
+                              <option value="12">12</option>
+                              <option value="13">13</option>
+                              <option value="14">14</option>
+                              <option value="15">15</option>
+                              <option value="16">16</option>
+                              <option value="17">17</option>
+                              <option value="18">18</option>
+                              <option value="19">19</option>
+                              <option value="20">20</option>
+                              <option value="21">21</option>
+                              <option value="22">22</option>
+                              <option value="23">23</option>
+                              <option value="24">24</option>
+                              <option value="25">25</option>
+                              <option value="26">26</option>
+                              <option value="27">27</option>
+                              <option value="28">28</option>
+                              <option value="29">29</option>
+                              <option value="30">30</option>
+                              <option value="31">31</option>
+                           </select>
+                        </div>
+                        <div class="required form-group col-xs-12">
+                           <select class="form-control s-styled hasCustomSelect" name="shipping_state">
+                              <option selected hidden>Select state</option>
+                              <option value="1">01</option>
+                              <option value="2">02</option>
+                              <option value="3">03</option>
+                              <option value="4">04</option>
+                              <option value="5">05</option>
+                              <option value="6">06</option>
+                              <option value="7">07</option>
+                              <option value="8">08</option>
+                              <option value="9">09</option>
+                              <option value="10">10</option>
+                              <option value="11">11</option>
+                              <option value="12">12</option>
+                              <option value="13">13</option>
+                              <option value="14">14</option>
+                              <option value="15">15</option>
+                              <option value="16">16</option>
+                              <option value="17">17</option>
+                              <option value="18">18</option>
+                              <option value="19">19</option>
+                              <option value="20">20</option>
+                              <option value="21">21</option>
+                              <option value="22">22</option>
+                              <option value="23">23</option>
+                              <option value="24">24</option>
+                              <option value="25">25</option>
+                              <option value="26">26</option>
+                              <option value="27">27</option>
+                              <option value="28">28</option>
+                              <option value="29">29</option>
+                              <option value="30">30</option>
+                              <option value="31">31</option>
+                           </select>
+                        </div>
+                        <div class="required form-group col-xs-12">
+                           <select class="form-control s-styled hasCustomSelect" name="shipping_zip_code">
+                              <option selected hidden>Postal zip code</option>
+                              <option value="1">01</option>
+                              <option value="2">02</option>
+                              <option value="3">03</option>
+                              <option value="4">04</option>
+                              <option value="5">05</option>
+                              <option value="6">06</option>
+                              <option value="7">07</option>
+                              <option value="8">08</option>
+                              <option value="9">09</option>
+                              <option value="10">10</option>
+                              <option value="11">11</option>
+                              <option value="12">12</option>
+                              <option value="13">13</option>
+                              <option value="14">14</option>
+                              <option value="15">15</option>
+                              <option value="16">16</option>
+                              <option value="17">17</option>
+                              <option value="18">18</option>
+                              <option value="19">19</option>
+                              <option value="20">20</option>
+                              <option value="21">21</option>
+                              <option value="22">22</option>
+                              <option value="23">23</option>
+                              <option value="24">24</option>
+                              <option value="25">25</option>
+                              <option value="26">26</option>
+                              <option value="27">27</option>
+                              <option value="28">28</option>
+                              <option value="29">29</option>
+                              <option value="30">30</option>
+                              <option value="31">31</option>
+                           </select>
+                        </div>
+                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-lg-2">
-                <div class="room-price">
-					<span class="price">Kes  7,875</span>
-					<span class="per-night"><small><strong>Per Night</strong></small></span>
-                  <a href="room.html" class="btn btn-sm">VIEW DETAILS</a>
-                </div>
-              </div>
+               </div>
             </div>
-          </div>
-          <!-- ITEM -->
-          <div class="room-list-item">
-            <div class="row">
-              <div class="col-lg-4">
-                <figure class="gradient-overlay-hover link-icon">
-                  <a href="room.html"><img src="images/rooms/one-bedroom/one-bedroom.jpg" class="img-fluid" alt="Image"></a>
-                </figure>
-              </div>
-              <div class="col-lg-6">
-                <div class="room-info">
-                  <h3 class="room-title">
-                    <a href="room.html" class="text-capitalize">one bedroom apartment</a>
-                  </h3>
-                                    <span><strong>80 M<sup>2</sup></strong></span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus animi quod adipisci quia? Laudantium quibusdam, mollitia nisi quasi perspiciatis omnis...</p>
-                  <div class="room-services">
-                    <i class="fa fa-coffee" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i>
-                    <i class="fa fa-wifi" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Free WiFi" data-original-title="WiFi"></i>
-                    <i class="fa fa-television" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Plasma TV with Satellite Channels" data-original-title="TV"></i>
-                    <span>Beds: 1 King</span>
-                    <span>Max Guests: 2</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-2">
-                <div class="room-price">
-					<span class="price">Kes  7,875</span>
-					<span class="per-night"><small><strong>Per Night</strong></small></span>
-                  <a href="room.html" class="btn btn-sm">VIEW DETAILS</a>
-                </div>
-              </div>
+            <div class="col-md-8 col-xs-12">
+               <div class="row">
+                  <form action="#"  class="form-inline bottom-buttons">
+                     <div class="col-lg-6 col-xs-12">
+                        <div class="row d-none">
+                           <div class="form-group col-xs-7 col-sm-8">
+                              <input type="text" name="coupon" placeholder="Enter coupon" class="form-control placeholder-fix">
+                           </div>
+                           <div class="col-xs-5 col-sm-4">
+                              <button class="btn btn-md btn-third-col">APPLY</button>
+                           </div>
+                        </div>
+                     </div>
+					  
+
+                     <div class="col-lg-12 col-sm-12">
+                        <div class="row">                          
+                           <div class="col-sm-7 col-xs-12">
+                              <button class="btn btn-md btn-sec-col text-white">PROCEED TO CHECKOUT</button>
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+               </div>
             </div>
-          </div>
-          <!-- ITEM -->
-          <div class="room-list-item">
-            <div class="row">
-              <div class="col-lg-4">
-                <figure class="gradient-overlay-hover link-icon">
-                  <a href="room.html"><img src="images/rooms/deluxe/deluxe.jpg" class="img-fluid" alt="Image"></a>
-                </figure>
-              </div>
-              <div class="col-lg-6">
-                <div class="room-info">
-                  <h3 class="room-title">
-                    <a href="room.html" class="text-capitalize">deluxe suite</a>
-                  </h3>
-                  <span><strong>55 M<sup>2</sup></strong></span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus animi quod adipisci quia? Laudantium quibusdam, mollitia nisi quasi perspiciatis omnis...</p>
-                  <div class="room-services">
-                    <i class="fa fa-coffee" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i>
-                    <i class="fa fa-wifi" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Free WiFi" data-original-title="WiFi"></i>
-                    <i class="fa fa-television" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Plasma TV with Satellite Channels" data-original-title="TV"></i>
-                    <span>Beds: 2 King and 1 Sofabed</span>
-                    <span>Max Guests: 4</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-2">
-                <div class="room-price">
-					<span class="price">Kes  7,875</span>
-					<span class="per-night"><small><strong>Per Night</strong></small></span>
-                  <a href="room.html" class="btn btn-sm">VIEW DETAILS</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ITEM -->
-          <div class="room-list-item">
-            <div class="row">
-              <div class="col-lg-4">
-                <figure class="gradient-overlay-hover link-icon">
-                  <a href="room.html"><img src="images/rooms/executive/executive.jpg" class="img-fluid" alt="Image"></a>
-                </figure>
-              </div>
-              <div class="col-lg-6">
-                <div class="room-info">
-                  <h3 class="room-title">
-                    <a href="room.html" class="text-capitalize">executive one bedroom apartment</a>
-                  </h3>
-                                    <span><strong>100 M<sup>2</sup></strong></span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus animi quod adipisci quia? Laudantium quibusdam, mollitia nisi quasi perspiciatis omnis...</p>
-                  <div class="room-services">
-                    <i class="fa fa-coffee" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i>
-                    <i class="fa fa-bath" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="2 Bathrooms" data-original-title="Bathroom"></i>
-                    <i class="fa fa-wifi" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Free WiFi" data-original-title="WiFi"></i>
-                    <i class="fa fa-television" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Plasma TV with Satellite Channels" data-original-title="TV"></i>
-                    <span>Beds: 1 King</span>
-                    <span>Max Guests: 2</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-2">
-                <div class="room-price">
-					<span class="price">Kes  7,875</span>
-					<span class="per-night"><small><strong>Per Night</strong></small></span>
-					<a href="room.html" class="btn btn-sm">VIEW DETAILS</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ITEM -->
-          <div class="room-list-item">
-            <div class="favorite-item d-none">
-              <i class="fa fa-star-o"></i>
-            </div>
-            <div class="row">
-              <div class="col-lg-4">
-                <figure class="gradient-overlay-hover link-icon">
-                  <a href="room.html"><img src="images/rooms/honeymoon/honeymoon.jpg" class="img-fluid" alt="Image"></a>
-                </figure>
-              </div>
-              <div class="col-lg-6">
-                <div class="room-info">
-                  <h3 class="room-title">
-                    <a href="room.html">HONEYMOON ROOM</a>
-                  </h3>
-                                    <span><strong>50 M<sup>2</sup></strong></span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus animi quod adipisci quia? Laudantium quibusdam, mollitia nisi quasi perspiciatis omnis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus animi quod adipisci quia? Laudantium quibusdam, mollitia nisi quasi perspiciatis omnis...</p>
-                  <div class="room-services">
-                    <i class="fa fa-coffee" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i>
-                    <i class="fa fa-wifi" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Free WiFi" data-original-title="WiFi"></i>
-                    <i class="fa fa-television" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Plasma TV with Satellite Channels" data-original-title="TV"></i>
-                    <span>Beds: 1 King</span>
-                    <span>Max Guests: 2</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-2">
-                <div class="room-price">
-					<span class="price">Kes  7,875</span>
-					<span class="per-night"><small><strong>Per Night</strong></small></span>
-                  <a href="room.html" class="btn btn-sm">VIEW DETAILS</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ITEM -->
-          <div class="room-list-item">
-            <div class="row">
-              <div class="col-lg-4">
-                <figure class="gradient-overlay-hover link-icon">
-                  <a href="room.html"><img src="images/rooms/view/view.jpg" class="img-fluid" alt="Image"></a>
-                </figure>
-              </div>
-              <div class="col-lg-6">
-                <div class="room-info">
-                  <h3 class="room-title">
-                    <a href="room.html">ROOM WITH VIEW</a>
-                  </h3>
-                                    <span><strong>50 M<sup>2</sup></strong></span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus animi quod adipisci quia? Laudantium quibusdam, mollitia nisi quasi perspiciatis omnis...</p>
-                  <div class="room-services">
-                    <i class="fa fa-coffee" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i>
-                    <i class="fa fa-wifi" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Free WiFi" data-original-title="WiFi"></i>
-                    <i class="fa fa-television" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Plasma TV with Satellite ChannelsPlasma TV with Satellite Channels" data-original-title="TV"></i>
-                    <span>Beds: 1 King and 1 Sofabed</span>
-                    <span>Max Guests: 4</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-2">
-                <div class="room-price">
-					<span class="price">Kes  7,875</span>
-					<span class="per-night"><small><strong>Per Night</strong></small></span>
-                  <a href="room.html" class="btn btn-sm">VIEW DETAILS</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ITEM -->
-          <div class="room-list-item">
-            <div class="row">
-              <div class="col-lg-4">
-                <figure class="gradient-overlay-hover link-icon">
-                  <a href="room.html"><img src="images/rooms/luxury/luxury.jpg" class="img-fluid" alt="Image"></a>
-                </figure>
-              </div>
-              <div class="col-lg-6">
-                <div class="room-info">
-                  <h3 class="room-title">
-                    <a href="room.html">LUXURY ROOM</a>
-                  </h3>
-                                    <span><strong>50 M<sup>2</sup></strong></span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus animi quod adipisci quia? Laudantium quibusdam, mollitia nisi quasi perspiciatis omnis...</p>
-                  <div class="room-services">
-                    <i class="fa fa-coffee" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i>
-                    <i class="fa fa-wifi" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Free WiFi" data-original-title="WiFi"></i>
-                    <i class="fa fa-television" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Plasma TV with Satellite Channels" data-original-title="TV"></i>
-                    <span>Beds: 2 King</span>
-                    <span>Max Guests: 4</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-2">
-                <div class="room-price">
-					<span class="price">Kes  7,875</span>
-					<span class="per-night"><small><strong>Per Night</strong></small></span>
-                  <a href="room.html" class="btn btn-sm">VIEW DETAILS</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ITEM -->
-          <div class="room-list-item">
-            <div class="row">
-              <div class="col-lg-4">
-                <figure class="gradient-overlay-hover link-icon">
-                  <a href="room.html"><img src="images/rooms/small/small.jpg" class="img-fluid" alt="Image"></a>
-                </figure>
-              </div>
-              <div class="col-lg-6">
-                <div class="room-info">
-                  <h3 class="room-title">
-                    <a href="room.html">SMALL ROOM</a>
-                  </h3>
-                                    <span><strong>50 M<sup>2</sup></strong></span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus animi quod adipisci quia? Laudantium quibusdam, mollitia nisi quasi perspiciatis omnis...</p>
-                  <div class="room-services">
-                    <i class="fa fa-coffee" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i>
-                    <i class="fa fa-television" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Plasma TV with Satellite Channels" data-original-title="TV"></i>
-                    <span>Beds: 1 King</span>
-                    <span>Max Guests: 2</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-2">
-                <div class="room-price">
-                  	<span class="price">Kes  7,875</span>
-					<span class="per-night"><small><strong>Per Night</strong></small></span>
-                  <a href="room.html" class="btn btn-sm">VIEW DETAILS</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- PAGINATION -->
-          <nav class="pagination">
-            <ul>
-              <li class="prev-pagination">
-                <a href="#">
-                  &nbsp;<i class="fa fa-angle-left"></i>
-                  Previous &nbsp;</a>
-              </li>
-              <li class="active">
-                <a href="#">1</a>
-              </li>
-              <li>
-                <a href="#">2</a>
-              </li>
-              <li>
-                <a href="#">3</a>
-              </li>
-              <li>...</li>
-              <li>
-                <a href="#">7</a>
-              </li>
-              <li>
-                <a href="#">8</a>
-              </li>
-              <li>
-                <a href="#">9</a>
-              </li>
-              <li class="next_pagination">
-                <a href="#">
-                  &nbsp; Next
-                  <i class="fa fa-angle-right"></i>
-                  &nbsp;
-                </a>
-              </li>
-            </ul>
-          </nav>
+
+            <div class="gap-70 col-xs-12"></div>
+         </div>
         </div>
       </main>
       <!-- ========== FOOTER ========== -->

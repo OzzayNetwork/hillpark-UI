@@ -2485,6 +2485,24 @@ Version:       1.1.0
 //		$('.accordion-header[aria-expanded]').attr(false);
 		$(this).parent().siblings().children('.collapse').removeClass('show');
 		$(this).parent().siblings().children('.accordion-header').attr("aria-expanded","true");
-	})
+	});
+	
+	// ============================================================================
+// btn-plus and btn-minus in "#order-detail-content" table
+// ============================================================================
+
+  $('.btn-plus').on('click', function () {
+    var $count = $(this).parent().find('.count');
+    var val = parseInt($count.val(),10);
+    $count.val(val+1);
+    return false;
+  });
+
+  $('.btn-minus').on('click', function () {
+    var $count = $(this).parent().find('.count');
+    var val = parseInt($count.val(),10);
+    if(val > 0) $count.val(val-1);
+    return false;
+  });
 	
 })(jQuery);
