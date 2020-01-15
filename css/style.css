@@ -7659,12 +7659,7 @@ background: #333;
     -moz-transform: rotate(-2deg);
 }
 
-#credit-modal .modal-header{
-	background-color: #0079fe;
-}
-#credit-modal .modal-header::before{
-	background-color: #0a6fe0;
-}
+#credit-modal 
 .modal-content{
 	overflow: hidden;
 }
